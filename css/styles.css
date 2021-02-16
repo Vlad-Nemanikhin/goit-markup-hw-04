@@ -355,6 +355,7 @@ ul a:hover, ul a:focus, ul a:active {
 
 .team-photos {
   width: calc((100% - 90px) / 4);
+  padding-bottom: 30px;
   background: var(--common-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -369,8 +370,7 @@ ul a:hover, ul a:focus, ul a:active {
   margin-bottom: var(--card-margin);
 }
 
-.team-photos p {padding-bottom: 30px;
-
+.team-photos p {
   color: var(--p-color);
   font-style: normal;
   font-weight: normal;
@@ -391,6 +391,44 @@ ul a:hover, ul a:focus, ul a:active {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.team-photos nav {
+  margin-top: 16px;
+  padding: 0 32px;
+}
+
+.team-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.social-icon {
+  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+}
+
+.team-link a {
+  display: block;
+  padding: 12px;
+  height: 100%;
+}
+
+.team-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-link:hover, .team-link:focus, .team-link:active {
+  border-radius: 50%;
+  background-color: var(--hover-color);
+}
+
+.team-link:hover .social-icon {
+  fill: #ffffff;
+}
+
 
 /*Section 5*/
 
@@ -482,13 +520,13 @@ footer {
   background: var(--footer-background);
 }
 
-.footer-conteiner>ul {
+.footer-conteiner {
   display: flex;
+  padding-top: 60px;
 }
 
 .logo {
   display: inline-block;
-  padding-top: 60px;
   margin-bottom: 20px;
 
   color: #2196f3;
@@ -531,6 +569,54 @@ address p {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--footer-link-color);
+}
+
+.connect{
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.connect h2 {
+  margin-bottom: 20px;
+
+  color: var(--common-color);
+  ont-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.connect-link {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.connect-link a {
+  display: block;
+  height: 100%;
+  padding: 12px;
+}
+
+.connect-link svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--common-color);
+}
+
+.connect-list {
+  display: flex;
+}
+
+.connect-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.connect-link:hover, .connect-link:focus, .connect-link:active {
+  background-color: var(--hover-color);
 }
 
 /*Portfolio*/
@@ -627,6 +713,11 @@ address p {
   text-align: left;
   letter-spacing: 0.03em;
 }
+/*
+.work-examples:hover, .work-examples:focus {
+  cursor: pointer;
+  box-shadow: 1px rgba(238,238,238,1);
+}*/
 
 .content-examples{
   margin: 20px 24px;
