@@ -1,4 +1,4 @@
-:after, :before, * {
+  :after, :before, * {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -131,7 +131,8 @@ header {
 }
 
 .main-contacts a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
   color: var(--p-color);
 
@@ -148,12 +149,39 @@ ul a:hover, ul a:focus, ul a:active {
   color: var(--hover-color);
 }
 
+.envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.envelope:hover, .envelope:focus, .phone:hover, .phone:focus {
+  fill: var(--hover-color);
+}
+
 /*MAIN*/
 /*Section 1*/
 
 .head {
-  width: var(--common-width);
-  background: #2f303a;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right,
+  rgba(47, 0, 0, 0.4),
+  rgba(0, 48, 0, 0.4),
+  rgba(0, 0, 58, 0.4)
+  ), url("../images/hero-squoosh.jpg");
+  background-color: rgba(196, 196, 196, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 200px 0;
 }
 
@@ -206,12 +234,43 @@ ul a:hover, ul a:focus, ul a:active {
   display: flex;
 }
 
-.information li {
+.information-list {
   width: 270px;
-  height: 101px;
 }
 
-.information li:not(:last-child){
+.information-list::before{
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  background-position: center;
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+}
+
+.antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.information-list::before:not(:last-child){
+  margin-right: 30px;
+}
+
+.information-list:not(:last-child){
   margin-right: var(--card-margin);}
 
 .information h3 {
@@ -333,9 +392,98 @@ ul a:hover, ul a:focus, ul a:active {
   letter-spacing: 0.03em;
 }
 
+/*Section 5*/
+
+.support {
+  padding: var(--section-padding) 0;
+}
+
+.support h2 {
+  margin-bottom: 50px;
+
+  color: var(--h-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.partners {
+  display: flex;
+}
+
+.list-partners {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.list-partners:not(:last-child){
+  margin-right: var(--card-margin);
+}
+
+.list-partners a{
+  display: block;
+  height: 100%;
+  padding: 20px 60px;
+}
+
+.first-company {
+  width: 45px;
+  height: 49px; 
+}
+
+.second-company {
+  width: 40px;
+  height: 52px; 
+}
+
+.third-company {
+  width: 41px;
+  height: 43px;
+}
+
+.fourth-company {
+  width: 80px;
+  height: 42px;
+}
+
+.fiveth-company {
+  width: 59px;
+  height: 47px;
+}
+
+.sixth-company {
+  width: 89px;
+  height: 46px;
+}
+
+.list-partners svg {
+  fill: #AFB1B8;
+}
+
+.list-partners:hover, .list-partners:focus, .list-partners:active {
+  border: 1px solid var(--hover-color);
+}
+
+.list-partners:hover .icon {
+  fill: var(--hover-color);
+}
+
+.list-partners:focus .icon {
+  fill: var(--hover-color);
+}
+
 footer {
   width: var(--common-width);
   background: var(--footer-background);
+}
+
+.footer-conteiner>ul {
+  display: flex;
 }
 
 .logo {

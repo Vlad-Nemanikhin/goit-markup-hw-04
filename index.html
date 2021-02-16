@@ -43,11 +43,15 @@
 
             <ul class="main-contacts">
                 <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a href="mailto:info@devstudio.com"><svg class="envelope">
+                        <use href="./images/symbol-social.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a>
                 </li>
 
                 <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a href="tel:+380961111111"><svg class="phone">
+                        <use class="phone" href="./images/symbol-social.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a>
                 </li>
 
             </ul>
@@ -70,19 +74,19 @@
             <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="information">
-                    <li>
+                    <li class="information-list antenna">
                         <h3>Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по   формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="information-list clock">
                         <h3>Пунктуальность</h3>
                         <p>Задача организации, в особенности же рамки и место обучения  кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="information-list diagram">
                         <h3>Планирование</h3>
                         <p>Равным образом консультация с широким активом в значительной     степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="information-list astronaut">
                         <h3>Современные технологии</h3>
                         <p>Значимость этих проблем настолько очевидна, что реализация   плановых заданий.</p>
                     </li>
@@ -137,13 +141,31 @@
                 </ul>
                 </div>
         </section>
+
+        <section class="support">
+            <div class="container">
+                <h2 class="title-support">Постоянные клиенты</h2>
+                <nav>
+                <ul class="partners">
+                <li class="list-partners"><a href="#"><svg class="icon first-company"><use class="icon first-company" href="./images/symbol-partners.svg#icon-co"></use></svg></a></li>
+                <li class="list-partners"><a href="#"><svg class="icon second-company"><use class="icon second-company" href="./images/symbol-partners.svg#icon-company-second"></use></svg></a></li>
+                <li class="list-partners"><a href="#"><svg class="icon third-company"><use class="icon third-company" href="./images/symbol-partners.svg#icon-company-third"></use></svg></a></li>
+                <li class="list-partners"><a href="#"><svg class="icon fourth-company"><use class="icon fourth-company" href="./images/symbol-partners.svg#icon-foster"></use></svg></a></li>
+                <li class="list-partners"><a href="#"><svg class="icon fiveth-company"><use class="icon fiveth-company" href="./images/symbol-partners.svg#icon-brand"></use></svg></a></li>
+                <li class="list-partners"><a href="#"><svg class="icon sixth-company"><use class="icon sixth-company" href="./images/symbol-partners.svg#icon-company-sixth"></use></svg></a></li>
+                </ul>
+                </nav>
+            </div>
+        </section>
     </main>
 
 
     <!-- FOOTER-->
 
     <footer>
-        <div class="container">
+        <div class="container footer-conteiner">
+            <ul>
+                <li>
             <a href="./index.html" class="logo">Web<span>Studio</span></a>
             <address>
                 <p>г. Киев, пр-т Леси Украинки, 26</p>
@@ -156,6 +178,35 @@
                 </li>
             </ul>
             </address>
+            </li>
+            <li>
+                <p>Присоединяйтесь</p>
+                <nav>
+                <ul>
+                    <li>
+                        <svg>
+                            <use></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg>
+                            <use></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg>
+                            <use></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg>
+                            <use></use>
+                        </svg>
+                    </li>
+                </ul>
+                </nav>
+            </li>
+            </ul>
         </div>
     </footer>
 </body>
