@@ -631,7 +631,7 @@ address p {
 .services {
   width: var(--common-width);
   margin: 0px auto;
-  padding-top: var(--section-margin);
+  padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
 
@@ -713,11 +713,11 @@ address p {
   text-align: left;
   letter-spacing: 0.03em;
 }
-/*
+
 .work-examples:hover, .work-examples:focus {
   cursor: pointer;
-  box-shadow: 1px rgba(238,238,238,1);
-}*/
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .content-examples{
   margin: 20px 24px;
