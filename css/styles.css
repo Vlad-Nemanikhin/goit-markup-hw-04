@@ -150,17 +150,13 @@ ul a:hover, ul a:focus, ul a:active {
 }
 
 .envelope {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 }
 
 .phone {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 }
 
 .envelope:hover, .envelope:focus, .phone:hover, .phone:focus {
@@ -398,22 +394,20 @@ ul a:hover, ul a:focus, ul a:active {
 }
 
 .team-link {
-  width: 44px;
+  width: calc( (100% - 30px) / 4);
   height: 44px;
   border-radius: 50%;
   background: inherit;
 }
 
 .social-icon {
-  fill: #AFB1B8;
-  width: 20px;
-  height: 20px;
+  fill: currentColor;
 }
 
 .team-link a {
   display: block;
   padding: 12px;
-  height: 100%;
+  color: #AFB1B8;
 }
 
 .team-link:not(:last-child) {
@@ -425,8 +419,8 @@ ul a:hover, ul a:focus, ul a:active {
   background-color: var(--hover-color);
 }
 
-.team-link:hover .social-icon {
-  fill: #ffffff;
+.team-link a:hover {
+  color: #ffffff;
 }
 
 
@@ -453,7 +447,7 @@ ul a:hover, ul a:focus, ul a:active {
 }
 
 .list-partners {
-  width: 170px;
+  width: calc( (100% - 150px) / 6);
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -464,55 +458,24 @@ ul a:hover, ul a:focus, ul a:active {
 }
 
 .list-partners a{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  padding: 20px 60px;
-}
 
-.first-company {
-  width: 45px;
-  height: 49px; 
-}
-
-.second-company {
-  width: 40px;
-  height: 52px; 
-}
-
-.third-company {
-  width: 41px;
-  height: 43px;
-}
-
-.fourth-company {
-  width: 80px;
-  height: 42px;
-}
-
-.fiveth-company {
-  width: 59px;
-  height: 47px;
-}
-
-.sixth-company {
-  width: 89px;
-  height: 46px;
+  color: #AFB1B8
 }
 
 .list-partners svg {
-  fill: #AFB1B8;
+  fill: currentColor;
 }
 
-.list-partners:hover, .list-partners:focus, .list-partners:active {
+.list-partners:hover, .list-partners:focus {
   border: 1px solid var(--hover-color);
 }
 
-.list-partners:hover .icon {
-  fill: var(--hover-color);
-}
-
-.list-partners:focus .icon {
-  fill: var(--hover-color);
+.list-partners a:hover, .list-partners a:focus {
+  color: var(--hover-color);
 }
 
 footer {
@@ -580,7 +543,7 @@ address p {
   margin-bottom: 20px;
 
   color: var(--common-color);
-  ont-style: normal;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -589,21 +552,19 @@ address p {
 }
 
 .connect-link {
-  width: 44px;
+  width: calc( (100% - 30px) / 4);
   height: 44px;
+
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
 .connect-link a {
   display: block;
-  height: 100%;
   padding: 12px;
 }
 
 .connect-link svg {
-  width: 20px;
-  height: 20px;
   fill: var(--common-color);
 }
 
